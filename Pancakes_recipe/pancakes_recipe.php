@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <?php session_start(); ?>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Tasty recipes - Pannkakor</title>

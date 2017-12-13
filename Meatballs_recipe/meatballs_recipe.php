@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <?php session_start(); ?>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Tasty Recipes - Köttbullar</title>
@@ -12,7 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
         <script src="../Includes/get_comments.js"></script>
         <script src="../Includes/set_comment.js"></script>
-        <script src="../Includes/delete_comment.js"></script>
+        <script src="../Includes/delete_comment.js"></script>     
     </head>
     <body>
         <?php
@@ -49,7 +49,7 @@
             
             <div class="comments">
                 <?php
-                    $_SESSION['recipe'] = 'meatballs';                   
+                    $_SESSION['recipe'] = 'meatballs';                  
                 ?>
             </div>
                 

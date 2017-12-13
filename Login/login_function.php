@@ -40,7 +40,7 @@ session_start();
                     elseif($password == $row['password'])
                     {
                         $_SESSION['id'] = $row['id'];
-                        $_SESSION['usr'] = $row['username'];
+                        $_SESSION['usr'] = $row['username'];                    
                         header("Location: ../index.php?login=success");
                         exit();
                     }
