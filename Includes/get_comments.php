@@ -21,5 +21,6 @@
         }   
         $array[] = $comment;
     }
+    
 
     echo json_encode($array);

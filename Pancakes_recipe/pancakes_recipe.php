@@ -49,6 +49,7 @@
                     $_SESSION['recipe'] = 'pancakes';                   
                 ?>
             </div>
+            <div>
             
             
             <?php
@@ -61,6 +62,7 @@
             <?php
                 }
             ?>
+            </div>
         </div>    
     </body>
 </html>

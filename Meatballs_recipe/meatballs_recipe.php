@@ -12,7 +12,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
         <script src="../Includes/get_comments.js"></script>
         <script src="../Includes/set_comment.js"></script>
-        <script src="../Includes/delete_comment.js"></script>     
+        <script src="../Includes/delete_comment.js"></script>  
+        <script src="../Includes/long_polling.js"></script>
     </head>
     <body>
         <?php
@@ -47,12 +48,12 @@
         
             <h3>Kommentarer:</h3>
             
-            <div class="comments">
+            <div class="comments" id="comments">
                 <?php
                     $_SESSION['recipe'] = 'meatballs';                  
                 ?>
-            </div>
-                
+            </div>          
+            <div>    
             <?php
                 if(isset($_SESSION['usr']))
                 {
@@ -63,6 +64,7 @@
             <?php                 
                 }  
             ?>
+            </div>
         </div>
     </body>
 </html>

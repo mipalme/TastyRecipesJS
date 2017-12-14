@@ -1,8 +1,8 @@
 $(document).ready(function ()
 {   
-    $(function (){
+    $(function getComments(){
         $.ajax({                                      
-            url: '../Includes/get_comments.php',                          
+            url: '../Includes/getRecentComment.php',                          
             data: "",                             
             dataType: 'json',                   
             success: function(data)        
@@ -23,8 +23,10 @@ $(document).ready(function ()
                     $('.comments').append("<p>"+user+": "+message+"</p>"); 
                   }
                   
-                }              
+                }
+                getComments();
             } 
         }); 
-    });   
+    });
+    getComments();
 });
