@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+\set_time_limit(0);
 
 define("ONE_SEC", 1);
 

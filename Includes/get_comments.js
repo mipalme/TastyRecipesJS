@@ -16,13 +16,13 @@ $(document).ready(function ()
                   var canDelete = data[i].canDelete;
                   if(canDelete)
                   {
-                    $('.comments').append("<p>"+user+": "+message+"<button onclick=remove("+commentid+")>Delete</button></p>"); 
+                    $('.comments').append("<p>"+user+": "+message+
+                     "<button onclick=remove("+commentid+")>Delete</button></p>"); 
                   }
                   else
                   {
                     $('.comments').append("<p>"+user+": "+message+"</p>"); 
-                  }
-                  
+                  }                 
                 }              
             } 
         }); 

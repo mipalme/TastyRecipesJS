@@ -13,6 +13,7 @@
         <script src="../Includes/get_comments.js"></script>
         <script src="../Includes/set_comment.js"></script>
         <script src="../Includes/delete_comment.js"></script>
+        <script src="../Includes/long_polling.js"></script>
     </head>
     <body>
         <?php

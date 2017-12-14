@@ -15,7 +15,7 @@
     while($row = mysqli_fetch_assoc($result))
     {
         $comment = new Comment($row['username'], $row['message'], $row['commentid'], false);
-        if($row['username'] == $_SESSION['usr'])
+        if(isset($_SESSION['usr']) && $row['username'] == $_SESSION['usr'])
         {
             $comment = new Comment($row['username'], $row['message'], $row['commentid'], true);
         }   
